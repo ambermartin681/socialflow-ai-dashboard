@@ -1,5 +1,5 @@
 import { Router, Request, Response } from 'express';
-import { facebookService, FacebookPostRequest } from '../../services/FacebookService';
+import { facebookService, FacebookPostRequest } from './services/FacebookService';
 import { createLogger } from '../../lib/logger';
 import { authMiddleware } from '../../middleware/authMiddleware';
 import { facebookPostLimiter } from '../../shared/middleware/authRateLimiters';
