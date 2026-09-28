@@ -1,8 +1,8 @@
 import { Router, Request, Response } from 'express';
 import { youTubeService } from '../services/YouTubeService';
 import { enqueueYouTubeSync } from '../jobs/youtubeSyncJob';
-import { createLogger } from '../lib/logger';
-import { authMiddleware } from '../middleware/auth';
+import { createLogger } from '../../lib/logger';
+import { authMiddleware } from '../../middleware/auth';
 
 const router = Router();
 const logger = createLogger('youtube-routes');
