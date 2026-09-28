@@ -7,10 +7,10 @@ import {
   VideoFormat,
   TranscodedOutput,
   TranscodingOptions,
-} from '../types/video';
+} from '../../../types/video';
 import { v4 as uuidv4 } from 'uuid';
-import { createLogger } from '../lib/logger';
-import { eventBus } from '../lib/eventBus';
+import { createLogger } from '../../../lib/logger';
+import { eventBus } from '../../../lib/eventBus';
 
 const logger = createLogger('VideoService');
 
